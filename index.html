@@ -4,17 +4,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Grace Community Church — Give</title>
+	<title>Mint Test Church — Give</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
 	<style>
 		:root {
-			--color-primary: #194d45;
-			--color-primary-dark: #194d45;
+			--color-primary: #32638c;
+			--color-primary-dark: #21374B;
 			--color-accent: #C8963E;
 			--color-accent-light: #D4A855;
-			--color-bg: #F8F6F2;
+			--color-bg: #ecf3f8;
 			--color-white: #FFFFFF;
 			--color-text: #2D2D2D;
 			--color-text-muted: #6B6B6B;
@@ -45,16 +45,18 @@
 
 		/* ── Navigation ── */
 		.nav {
-			background-color: var(--color-primary);
+			background-color: rgb(from var(--color-primary-dark) r g b / 0.9);
 			padding: 0 2rem;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			height: 64px;
-			position: sticky;
+			position: fixed;
+			width: 100%;
 			top: 0;
 			z-index: 100;
 			box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+			backdrop-filter: blur(4px);
 		}
 
 		.nav-brand {
@@ -88,8 +90,8 @@
 
 		/* ── Hero ── */
 		.hero {
-			background: linear-gradient(160deg, var(--color-primary) 0%, var(--color-primary-dark) 60%, #0F2B21 100%);
-			padding: 5rem 2rem 4.5rem;
+			background: linear-gradient(160deg, var(--color-primary) 0%, var(--color-primary-dark) 60%, #192633 100%);
+			padding: calc(5rem + 64px) 2rem 4.5rem;
 			text-align: center;
 			position: relative;
 			overflow: hidden;
@@ -348,7 +350,7 @@
 
 	<!-- Navigation -->
 	<nav class="nav">
-		<div class="nav-brand">Grace Community Church</div>
+		<div class="nav-brand">Mint Test Church</div>
 		<ul class="nav-links">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
@@ -371,15 +373,18 @@
 		<div class="form-section-header">
 			<h2>Give Online</h2>
 			<p>Secure and simple. Thank you for your faithful generosity.</p>
-			<!-- <a class="fullpage-link" href="http://localhost:29501/MintChurch14262/-/form/give/richard-giving-form" target="_blank"> -->
-			<a class="fullpage-link" href="https://testing.realm.dev/MintChurch14262/-/form/give/richard-giving-form" target="_blank">
+			<!-- <a class="fullpage-link" href="http://localhost:29501/MintChurch14262/-/form/give/wesupportthornwell" target="_blank"> -->
+			<a class="fullpage-link" href="https://testing.realm.dev/MintChurch14262/-/form/give/wesupportthornwell" target="_blank">
 				Open full-page form
 				<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
 			</a>
 		</div>
 		<div>
-			<!-- <div data-embed-giving-form-url="http://localhost:29501/MintChurch14262/give/richard-giving-form"></div> -->
-			<div data-embed-giving-form-url="https://testing.realm.dev/MintChurch14262/give/richard-giving-form"></div>
+			<!-- <div data-embed-giving-form-url="http://localhost:29501/MintChurch14262/give/wesupportthornwell"></div> -->
+			<!-- <div data-embed-giving-form-url="https://testing.realm.dev/MintChurch14262/give/wesupportthornwell"></div> -->
+		</div>
+		<div style="display: flex; justify-content: center; align-items: center;">
+			<iframe src="https://testing.realm.dev/MintChurch14262/give/wesupportthornwell" allow="payment" style="width: 700px; height: 900px;"></iframe>
 		</div>
 	</section>
 
@@ -414,20 +419,20 @@
 	<footer class="footer">
 		<div class="footer-inner">
 			<div>
-				<div class="footer-brand">Grace Community Church</div>
+				<div class="footer-brand">Mint Test Church</div>
 				<address class="footer-address">
 					1234 Oak Street<br>
 					Springfield, IL 62701
 				</address>
 			</div>
 			<div class="footer-contact">
-				<a href="mailto:info@gracecommunity.church">info@gracecommunity.church</a><br>
+				<a href="mailto:info@minttest.church">info@minttest.church</a><br>
 				(555) 123-4567<br>
 				Sunday Services: 9:00 &amp; 11:00 AM
 			</div>
 		</div>
 		<div class="footer-bottom">
-			&copy; 2026 Grace Community Church. All rights reserved.
+			&copy; 2026 Mint Test Church. All rights reserved.
 		</div>
 	</footer>
 
